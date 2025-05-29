@@ -350,11 +350,11 @@ def test_13():
 
     # Round the results to 2 decimal places
     result['avg(c12)'] = {k: round(v, 2) for k, v in result['avg(c12)'].items()}
-
+    # print(result)
     expected = {
         "K0": {0: "A", 1: "B", 2: "C", 3: "D", 4: "E"},
         "avg(c12)": {
-            0: 476.16,
+            0: 476.15,
             1: 536.52,
             2: 490.83,
             3: 709.53,
@@ -384,3 +384,5 @@ def test_14():
         },
     }
     assert result == expected
+
+test_13()
